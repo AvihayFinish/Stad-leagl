@@ -1,0 +1,215 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stad - Privacy Policy</title>
+    <style>
+      :root { color-scheme: light dark; --bg:#fff; --card:#f7f7f9; --text:#111827; --muted:#4b5563; --accent:#2563eb; --border:#e5e7eb; }
+      @media (prefers-color-scheme: dark) { :root { --bg:#0b1020; --card:#111827; --text:#f9fafb; --muted:#cbd5e1; --accent:#60a5fa; --border:#1f2937; } }
+      body { margin:0; font-family: Inter, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; background:var(--bg); color:var(--text); }
+      .wrap { max-width:980px; margin:0 auto; padding:24px; }
+      .bar { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px; }
+      .btn { padding:8px 12px; border-radius:10px; border:1px solid var(--border); text-decoration:none; color:var(--text); background:transparent; cursor:pointer; }
+      .btn.active { border-color:var(--accent); color:var(--accent); }
+      .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+      .meta { color:var(--muted); }
+      pre { white-space:pre-wrap; word-break:break-word; font-family: inherit; margin:0; }
+      .rtl { direction: rtl; text-align: right; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <nav class="bar">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="terms.html" id="termsLink">Terms</a>
+        <button class="btn" id="enBtn" type="button">English</button>
+        <button class="btn" id="heBtn" type="button">עברית</button>
+      </nav>
+
+      <section class="card">
+        <h1 id="title"></h1>
+        <p class="meta" id="updated"></p>
+        <pre id="content"></pre>
+      </section>
+    </main>
+
+    <script>
+      const PRIVACY = {
+        en: `PRIVACY POLICY - STAD
+Last Updated: April 2025
+
+Your privacy is important to us. This Privacy Policy explains how Stad ("we", "us", "our") collects, uses, and protects your personal data.
+
+1. WHO WE ARE
+Stad is a social sports application. For questions about this policy, contact us at stadsports161@gmail.com.
+
+2. DATA WE COLLECT
+When you use Stad, we collect and store the following information:
+
+Account Data:
+- Email address, username, optional bio, and profile picture.
+
+Content Data:
+- Posts (text, images, videos), comments, likes, and reposts you create.
+
+Preferences:
+- Favorite sports teams and leagues, app language preference.
+
+Usage Data:
+- Posts you have viewed, search history within the app.
+- Notification preferences and push notification token (for sending alerts).
+
+Engagement Signals (used for personalized feed):
+- Anonymous engagement scores computed from your interaction patterns (likes, views, comments). These are processed on our server to build a personalized feed.
+- Affinity scores between you and other authors, derived from your engagement behavior.
+
+3. HOW WE USE YOUR DATA
+We use your data to:
+- Operate and provide the Stad service.
+- Personalize your content feed using ML-based engagement signals.
+- Send push notifications for match events and social interactions (with your consent).
+- Improve the app and diagnose technical issues.
+
+We do NOT sell your personal data to third parties.
+
+4. DATA STORAGE & SECURITY
+Your data is stored on servers located in Frankfurt, Germany (EU), operated by Supabase (PostgreSQL database) and Google Firebase (Firestore - social content). Both providers implement industry-standard security measures.
+
+Social content (posts, comments, likes) is stored in Google Firebase Firestore.
+Profile and account data is stored in Supabase.
+Push notifications are delivered via Expo's notification infrastructure.
+
+All data within the EU is subject to GDPR protections.
+
+5. DATA RETENTION
+We retain your data for as long as your account is active. When you delete your account, your profile, posts, and associated personal data are permanently deleted from our systems.
+
+6. YOUR RIGHTS (GDPR)
+If you are located in the EU/EEA, you have the right to:
+- Access the personal data we hold about you.
+- Correct inaccurate data.
+- Request deletion of your data ("right to be forgotten").
+- Object to or restrict processing of your data.
+- Data portability.
+
+To exercise these rights, contact us at stadsports161@gmail.com.
+
+7. THIRD-PARTY SERVICES
+We use the following third-party services:
+- Supabase (data infrastructure) - supabase.com/privacy
+- Google Firebase (realtime social data & authentication) - firebase.google.com/support/privacy
+- Expo (push notifications & app infrastructure) - expo.dev/privacy
+
+8. CHILDREN'S PRIVACY
+Stad is not intended for children under the age of 13. We do not knowingly collect personal data from children.
+
+9. COOKIES & TRACKING
+Stad is a mobile application and does not use browser cookies. We use session tokens to keep you logged in.
+
+10. CHANGES TO THIS POLICY
+We may update this policy periodically. We will notify you of significant changes through the app.
+
+11. CONTACT
+For privacy-related inquiries: stadsports161@gmail.com`,
+        he: `מדיניות פרטיות - STAD
+עדכון אחרון: אפריל 2025
+
+פרטיותך חשובה לנו. מדיניות פרטיות זו מסבירה כיצד Stad ("אנחנו") אוספת, משתמשת ומגנה על נתונים אישיים שלך.
+
+1. מי אנחנו
+Stad היא אפליקציית ספורט חברתית. לשאלות בנוגע למדיניות זו, צרי/צור קשר: stadsports161@gmail.com
+
+2. מידע שאנו אוספים
+כשאתה משתמש ב-Stad, אנו אוספים ומאחסנים את המידע הבא:
+
+נתוני חשבון:
+- כתובת אימייל, שם משתמש, ביוגרפיה אופציונלית ותמונת פרופיל.
+
+תוכן:
+- פוסטים (טקסט, תמונות, סרטונים), תגובות, לייקים ושיתופים שיצרת.
+
+העדפות:
+- קבוצות ליגות ספורט מועדפות, שפת האפליקציה.
+
+נתוני שימוש:
+- פוסטים שצפית בהם, היסטוריית חיפוש בתוך האפליקציה.
+- העדפות התראות וטוקן התראות דחיפה (לשליחת התראות).
+
+אותות מעורבות (לפיד מותאם אישית):
+- ציוני מעורבות אנונימיים המחושבים על בסיס דפוסי האינטראקציה שלך (לייקים, צפיות, תגובות). אלה מעובדים בשרת שלנו לבניית פיד מותאם אישית.
+- ציוני זיקה בינך לבין כותבים אחרים, בהתאם להתנהגות המעורבות שלך.
+
+3. כיצד אנו משתמשים במידע שלך
+אנו משתמשים בנתונים שלך כדי:
+- להפעיל ולספק את שירות Stad.
+- להתאים אישית את פיד התוכן שלך באמצעות אותות מעורבות מבוססי ML.
+- לשלוח התראות דחיפה לאירועי משחקים ואינטראקציות חברתיות (בהסכמתך).
+- לשפר את האפליקציה ולאבחן בעיות טכניות.
+
+אנו לא מוכרים את הנתונים האישיים שלך לצדדים שלישיים.
+
+4. אחסון נתונים ואבטחה
+הנתונים שלך מאוחסנים בשרתים הממוקמים בפרנקפורט, גרמניה (האיחוד האירופי), המופעלים על ידי Supabase (מסד נתונים PostgreSQL) ו-Google Firebase (Firestore - תוכן חברתי). שני הספקים מיישמים אמצעי אבטחה בתקן תעשייתי.
+
+תוכן חברתי (פוסטים, תגובות, לייקים) מאוחסן ב-Google Firebase Firestore.
+פרופיל ונתוני חשבון מאוחסנים ב-Supabase.
+התראות דחיפה מועברות דרך תשתית ההתראות של Expo.
+
+כל הנתונים באיחוד האירופי כפופים להגנות GDPR.
+
+5. שמירת נתונים
+אנו שומרים את הנתונים שלך כל עוד החשבון שלך פעיל. כאשר תמחק את חשבונך, הפרופיל, הפוסטים וכל הנתונים האישיים הקשורים אליך יימחקו לצמיתות ממערכות שלנו.
+
+6. זכויותיך (GDPR)
+אם אתה ממוקם ב-EU/EEA, יש לך את הזכות:
+- לגשת לנתונים האישיים שאנו מחזיקים עליך.
+- לתקן נתונים שגויים.
+- לבקש מחיקת הנתונים שלך ("הזכות להישכח").
+- להתנגד לעיבוד הנתונים שלך או להגבילו.
+- לניידות נתונים.
+
+לממש זכויות אלו, פנה/י אלינו: stadsports161@gmail.com
+
+7. שירותי צד שלישי
+אנו משתמשים בשירותי הצד השלישי הבאים:
+- Supabase (תשתית נתונים) - supabase.com/privacy
+- Google Firebase (נתונים חברתיים בזמן אמת ואימות) - firebase.google.com/support/privacy
+- Expo (התראות דחיפה ותשתית אפליקציה) - expo.dev/privacy
+
+8. פרטיות ילדים
+Stad אינה מיועדת לילדים מתחת לגיל 13. אנו לא אוספים ביודעין מידע אישי מילדים.
+
+9. עוגיות ומעקב
+Stad היא אפליקציה סלולרית ואינה משתמשת בעוגיות דפדפן. אנו משתמשים בטוקני הפעלה כדי לשמור על כניסתך לחשבון.
+
+10. שינויים במדיניות זו
+אנו עשויים לעדכן מדיניות זו מעת לעת. נודיע לך על שינויים משמעותיים דרך האפליקציה.
+
+11. יצירת קשר
+לפניות הקשורות לפרטיות: stadsports161@gmail.com`
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang') === 'he' ? 'he' : 'en';
+      const isHe = lang === 'he';
+
+      document.documentElement.lang = isHe ? 'he' : 'en';
+      document.getElementById('content').textContent = PRIVACY[lang];
+      document.getElementById('content').classList.toggle('rtl', isHe);
+      document.getElementById('title').textContent = isHe ? 'מדיניות פרטיות' : 'Privacy Policy';
+      document.getElementById('updated').textContent = isHe ? 'עדכון אחרון: אפריל 2025' : 'Last Updated: April 2025';
+      document.getElementById('enBtn').classList.toggle('active', !isHe);
+      document.getElementById('heBtn').classList.toggle('active', isHe);
+      document.getElementById('termsLink').href = `terms.html?lang=${lang}`;
+
+      document.getElementById('enBtn').addEventListener('click', () => {
+        window.location.search = '?lang=en';
+      });
+      document.getElementById('heBtn').addEventListener('click', () => {
+        window.location.search = '?lang=he';
+      });
+    </script>
+  </body>
+</html>
+

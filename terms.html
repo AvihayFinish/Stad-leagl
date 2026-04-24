@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stad - Terms of Use</title>
+    <style>
+      :root { color-scheme: light dark; --bg:#fff; --card:#f7f7f9; --text:#111827; --muted:#4b5563; --accent:#2563eb; --border:#e5e7eb; }
+      @media (prefers-color-scheme: dark) { :root { --bg:#0b1020; --card:#111827; --text:#f9fafb; --muted:#cbd5e1; --accent:#60a5fa; --border:#1f2937; } }
+      body { margin:0; font-family: Inter, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; background:var(--bg); color:var(--text); }
+      .wrap { max-width:980px; margin:0 auto; padding:24px; }
+      .bar { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px; }
+      .btn { padding:8px 12px; border-radius:10px; border:1px solid var(--border); text-decoration:none; color:var(--text); background:transparent; cursor:pointer; }
+      .btn.active { border-color:var(--accent); color:var(--accent); }
+      .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+      .meta { color:var(--muted); }
+      pre { white-space:pre-wrap; word-break:break-word; font-family: inherit; margin:0; }
+      .rtl { direction: rtl; text-align: right; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <nav class="bar">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="privacy.html" id="privacyLink">Privacy</a>
+        <button class="btn" id="enBtn" type="button">English</button>
+        <button class="btn" id="heBtn" type="button">עברית</button>
+      </nav>
+
+      <section class="card">
+        <h1 id="title"></h1>
+        <p class="meta" id="updated"></p>
+        <pre id="content"></pre>
+      </section>
+    </main>
+
+    <script>
+      const TERMS = {
+        en: `TERMS OF USE - STAD
+Last Updated: April 2025
+
+Welcome to Stad. By registering or using this application, you agree to these Terms of Use. Please read them carefully.
+
+1. ACCEPTANCE OF TERMS
+By creating an account or using Stad, you confirm that you are at least 13 years old and agree to be bound by these Terms of Use. If you do not agree, do not use the app.
+
+2. DESCRIPTION OF SERVICE
+Stad is a social sports network that allows users to follow sports teams and leagues, view match data, create and share posts, and interact with other users' content.
+
+3. USER ACCOUNTS
+You are responsible for maintaining the confidentiality of your account credentials. You must provide accurate information during registration. You are responsible for all activity that occurs under your account.
+
+4. ACCEPTABLE USE
+You agree not to:
+- Post content that is illegal, offensive, defamatory, or violates third-party rights.
+- Impersonate another person or entity.
+- Use the app to spam, harass, or harm other users.
+- Attempt to access or interfere with our servers or systems.
+- Scrape, reverse-engineer, or exploit any part of the application.
+
+5. USER CONTENT
+You retain ownership of content you post. By posting, you grant Stad a non-exclusive, worldwide, royalty-free license to display, distribute, and process your content to operate the service. You are solely responsible for your content.
+
+6. INTELLECTUAL PROPERTY
+The Stad application, including its design, logo, and code, is the property of the developer. Sports data is provided by third-party APIs and is subject to their respective terms.
+
+7. ACCOUNT DELETION
+You may delete your account at any time via Settings > Account. Upon deletion, your posts, profile, and all associated data will be permanently removed from our systems.
+
+8. TERMINATION
+We reserve the right to suspend or terminate your account if you violate these Terms.
+
+9. DISCLAIMER OF WARRANTIES
+Stad is provided "as is." We make no warranties regarding uptime, accuracy of sports data, or fitness for a particular purpose.
+
+10. LIMITATION OF LIABILITY
+To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, or consequential damages arising from your use of the app.
+
+11. GOVERNING LAW
+These Terms are governed by the laws of the State of Israel, without regard to conflict of law principles.
+
+12. CONTACT
+For questions regarding these Terms, contact us at: stadsports161@gmail.com`,
+        he: `תנאי שימוש - STAD
+עדכון אחרון: אפריל 2025
+
+ברוכים הבאים ל-Stad. על ידי הרשמה או שימוש באפליקציה זו, אתה מסכים לתנאי השימוש הבאים. אנא קרא אותם בעיון.
+
+1. קבלת התנאים
+על ידי יצירת חשבון או שימוש ב-Stad, אתה מאשר כי אתה בן 13 לפחות ומסכים לתנאי השימוש. אם אינך מסכים, אל תשתמש באפליקציה.
+
+2. תיאור השירות
+Stad היא רשת חברתית לספורט המאפשרת למשתמשים לעקוב אחרי קבוצות וליגות, לצפות בנתוני משחקים, ליצור ולשתף פוסטים ולהתקשרות עם תוכן של משתמשים אחרים.
+
+3. חשבונות משתמש
+אתה אחראי לשמירת סודיות פרטי הכניסה לחשבונך. עליך לספק מידע מדויק בעת ההרשמה. אתה אחראי לכל פעילות המתבצעת תחת חשבונך.
+
+4. שימוש מותר
+אתה מתחייב שלא:
+- לפרסם תוכן בלתי חוקי, פוגעני, משמיץ או הפוגע בזכויות צד שלישי.
+- להתחזות לאדם או גוף אחר.
+- להשתמש באפליקציה כדי לספאם, להטריד או לפגוע במשתמשים אחרים.
+- לנסות לגשת לשרתים או למערכות שלנו או להפריע לפעולתם.
+- לגרד, לבצע הנדסה הפוכה או לנצל כל חלק מהיישום.
+
+5. תוכן משתמשים
+אתה שומר על הבעלות על התוכן שאתה מפרסם. על ידי פרסום, אתה מעניק ל-Stad רישיון לא בלעדי, עולמי, ללא תמלוגים, להציג, להפיץ ולעבד את התוכן שלך לצורך הפעלת השירות. אתה האחראי הבלעדי לתוכן שלך.
+
+6. קניין רוחני
+יישום Stad, כולל עיצובו, לוגואו וקוד המקור, הם רכוש המפתח. נתוני הספורט מסופקים על ידי API של צד שלישי ובכפוף לתנאי השימוש שלהם.
+
+7. מחיקת חשבון
+תוכל למחוק את חשבונך בכל עת דרך הגדרות > חשבון. עם המחיקה, הפוסטים, הפרופיל וכל הנתונים הקשורים אליך יוסרו לצמיתות ממערכות שלנו.
+
+8. סיום
+אנו שומרים לעצמנו את הזכות להשעות או לסגור את חשבונך אם תפר תנאים אלה.
+
+9. הגבלת אחריות
+Stad מסופקת "כפי שהיא." אנו לא מציגים אחריות לגבי זמינות, דיוק נתוני ספורט, או התאמה למטרה מסוימת.
+
+10. הגבלת חבות
+במידה המרבית המותרת על פי דין, לא נהיה אחראים לכל נזק עקיף, מקרי או תוצאתי הנובע משימושך באפליקציה.
+
+11. דין שולט
+תנאים אלה כפופים לחוקי מדינת ישראל, ללא התחשבות בכללי ברירת הדין.
+
+12. יצירת קשר
+לשאלות בנוגע לתנאים אלה, צרו קשר: stadsports161@gmail.com`
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang') === 'he' ? 'he' : 'en';
+      const isHe = lang === 'he';
+
+      document.documentElement.lang = isHe ? 'he' : 'en';
+      document.getElementById('content').textContent = TERMS[lang];
+      document.getElementById('content').classList.toggle('rtl', isHe);
+      document.getElementById('title').textContent = isHe ? 'תנאי שימוש' : 'Terms of Use';
+      document.getElementById('updated').textContent = isHe ? 'עדכון אחרון: אפריל 2025' : 'Last Updated: April 2025';
+      document.getElementById('enBtn').classList.toggle('active', !isHe);
+      document.getElementById('heBtn').classList.toggle('active', isHe);
+      document.getElementById('privacyLink').href = `privacy.html?lang=${lang}`;
+
+      document.getElementById('enBtn').addEventListener('click', () => {
+        window.location.search = '?lang=en';
+      });
+      document.getElementById('heBtn').addEventListener('click', () => {
+        window.location.search = '?lang=he';
+      });
+    </script>
+  </body>
+</html>
+
