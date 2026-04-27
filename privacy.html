@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,7 +37,7 @@
     <script>
       const PRIVACY = {
         en: `PRIVACY POLICY - STAD
-Last Updated: April 2025
+Last Updated: April 2026
 
 Your privacy is important to us. This Privacy Policy explains how Stad ("we", "us", "our") collects, uses, and protects your personal data.
 
@@ -48,72 +48,124 @@ Stad is a social sports application. For questions about this policy, contact us
 When you use Stad, we collect and store the following information:
 
 Account Data:
-- Email address, username, optional bio, and profile picture.
+• Email address, username, optional bio, and profile picture.
 
 Content Data:
-- Posts (text, images, videos), comments, likes, and reposts you create.
+• Posts (text, images, videos), comments, likes, and reposts you create.
 
 Preferences:
-- Favorite sports teams and leagues, app language preference.
+• Favorite sports teams and leagues, app language preference.
 
 Usage Data:
-- Posts you have viewed, search history within the app.
-- Notification preferences and push notification token (for sending alerts).
+• Posts you have viewed, search history within the app.
+• Notification preferences and push notification token (for sending alerts).
+
+Device Data:
+• A unique device identifier (used to associate your push notification token with your device).
+• Device model and platform (iOS or Android) and operating system version.
 
 Engagement Signals (used for personalized feed):
-- Anonymous engagement scores computed from your interaction patterns (likes, views, comments). These are processed on our server to build a personalized feed.
-- Affinity scores between you and other authors, derived from your engagement behavior.
+• Anonymous engagement scores computed from your interaction patterns (likes, views, comments). These are processed on our server to build a personalized feed.
+• Affinity scores between you and other authors, derived from your engagement behavior.
+
+Advertising & Analytics Data (collected automatically by third-party SDKs):
+• Advertising Identifier: your device's IDFA (iOS) or Google Advertising ID / GAID (Android), collected by Google AdMob to serve relevant ads.
+• App usage events such as screen views and session duration, collected by Firebase Analytics.
+• Crash diagnostics including device state, stack traces, IP address, and app version, collected by Sentry for error monitoring.
+
+Device Permissions:
+• Camera: accessed when you take photos or videos for posts (permission requested before use).
+• Photo Library: accessed when you select media from your gallery for posts.
+• Microphone: declared for potential audio features (permission requested before use).
 
 3. HOW WE USE YOUR DATA
 We use your data to:
-- Operate and provide the Stad service.
-- Personalize your content feed using ML-based engagement signals.
-- Send push notifications for match events and social interactions (with your consent).
-- Improve the app and diagnose technical issues.
+• Operate and provide the Stad service.
+• Personalize your content feed using ML-based engagement signals.
+• Send push notifications for match events and social interactions (with your consent).
+• Display in-app advertisements via Google AdMob, including personalized ads based on your advertising ID and device information.
+• Detect app crashes and diagnose technical issues via Sentry crash reporting and session replay.
+• Analyze app usage patterns via Firebase Analytics to improve the app experience.
+• Improve the app and maintain service reliability.
 
 We do NOT sell your personal data to third parties.
 
 4. DATA STORAGE & SECURITY
-Your data is stored on servers located in Frankfurt, Germany (EU), operated by Supabase (PostgreSQL database) and Google Firebase (Firestore - social content). Both providers implement industry-standard security measures.
+Your data is stored on servers located in Frankfurt, Germany (EU), operated by Supabase (PostgreSQL database) and Google Firebase (Firestore — social content). Both providers implement industry-standard security measures.
 
-Social content (posts, comments, likes) is stored in Google Firebase Firestore.
-Profile and account data is stored in Supabase.
-Push notifications are delivered via Expo's notification infrastructure.
+• Social content (posts, comments, likes) is stored in Google Firebase Firestore.
+• Profile and account data is stored in Supabase.
+• Push notification tokens and device identifiers are stored in our Supabase database.
+• Push notifications are delivered via Expo's notification infrastructure.
+• Crash and error data is processed by Sentry (servers in Germany / EU).
 
 All data within the EU is subject to GDPR protections.
 
 5. DATA RETENTION
 We retain your data for as long as your account is active. When you delete your account, your profile, posts, and associated personal data are permanently deleted from our systems.
 
-6. YOUR RIGHTS (GDPR)
+6. ADVERTISING
+Stad displays in-app advertisements powered by Google AdMob.
+
+To serve relevant ads, Google AdMob may collect and use:
+• Your device's advertising identifier (IDFA on iOS, GAID on Android).
+• Device information (model, operating system, screen size).
+• IP address (to infer approximate location).
+• App usage and interaction data.
+
+These identifiers are used for ad personalization and measurement. You can limit ad tracking at the device level:
+• iOS: Settings → Privacy & Security → Tracking → disable "Allow Apps to Request to Track"
+• Android: Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization"
+
+For more information, see Google's Privacy Policy: policies.google.com/privacy
+
+7. YOUR RIGHTS (GDPR & CCPA)
+
+GDPR — EU / EEA Users:
 If you are located in the EU/EEA, you have the right to:
-- Access the personal data we hold about you.
-- Correct inaccurate data.
-- Request deletion of your data ("right to be forgotten").
-- Object to or restrict processing of your data.
-- Data portability.
+• Access the personal data we hold about you.
+• Correct inaccurate data.
+• Request deletion of your data ("right to be forgotten").
+• Object to or restrict processing of your data.
+• Data portability.
 
-To exercise these rights, contact us at stadsports161@gmail.com.
+CCPA — California Residents:
+If you are a California resident, you have the right to:
+• Know what personal information we collect, use, and disclose.
+• Request deletion of personal information we have collected about you.
+• Opt out of the sale or sharing of personal information (we do not sell your data).
+• Non-discrimination for exercising your privacy rights.
 
-7. THIRD-PARTY SERVICES
-We use the following third-party services:
-- Supabase (data infrastructure) - supabase.com/privacy
-- Google Firebase (realtime social data & authentication) - firebase.google.com/support/privacy
-- Expo (push notifications & app infrastructure) - expo.dev/privacy
+To exercise any of these rights, contact us at stadsports161@gmail.com.
 
-8. CHILDREN'S PRIVACY
+8. THIRD-PARTY SERVICES
+We use the following third-party services. Each may collect data as described in their respective privacy policies:
+
+• Supabase (database & authentication) — supabase.com/privacy
+• Google Firebase (authentication, real-time database, analytics, push messaging) — firebase.google.com/support/privacy
+• Google AdMob (in-app advertising) — policies.google.com/privacy
+• Sentry (crash reporting & session replay) — sentry.io/privacy
+• Expo (push notifications & app infrastructure) — expo.dev/privacy
+
+9. CHILDREN'S PRIVACY
 Stad is not intended for children under the age of 13. We do not knowingly collect personal data from children.
 
-9. COOKIES & TRACKING
+10. COOKIES & TRACKING
 Stad is a mobile application and does not use browser cookies. We use session tokens to keep you logged in.
 
-10. CHANGES TO THIS POLICY
+However, like most apps, Stad uses mobile tracking technologies:
+• Advertising Identifiers (IDFA / GAID) via Google AdMob for personalized ads.
+• Session replay technology via Sentry to capture anonymized screen interactions for debugging (10% of sessions; 100% when errors occur).
+
+You can opt out of ad-based tracking via your device settings as described in Section 6.
+
+11. CHANGES TO THIS POLICY
 We may update this policy periodically. We will notify you of significant changes through the app.
 
-11. CONTACT
+12. CONTACT
 For privacy-related inquiries: stadsports161@gmail.com`,
         he: `מדיניות פרטיות - STAD
-עדכון אחרון: אפריל 2025
+עדכון אחרון: אפריל 2026
 
 פרטיותך חשובה לנו. מדיניות פרטיות זו מסבירה כיצד Stad ("אנחנו") אוספת, משתמשת ומגנה על נתונים אישיים שלך.
 
@@ -124,69 +176,121 @@ Stad היא אפליקציית ספורט חברתית. לשאלות בנוגע 
 כשאתה משתמש ב-Stad, אנו אוספים ומאחסנים את המידע הבא:
 
 נתוני חשבון:
-- כתובת אימייל, שם משתמש, ביוגרפיה אופציונלית ותמונת פרופיל.
+• כתובת אימייל, שם משתמש, ביוגרפיה אופציונלית ותמונת פרופיל.
 
 תוכן:
-- פוסטים (טקסט, תמונות, סרטונים), תגובות, לייקים ושיתופים שיצרת.
+• פוסטים (טקסט, תמונות, סרטונים), תגובות, לייקים ושיתופים שיצרת.
 
 העדפות:
-- קבוצות ליגות ספורט מועדפות, שפת האפליקציה.
+• קבוצות וליגות ספורט מועדפות, שפת האפליקציה.
 
 נתוני שימוש:
-- פוסטים שצפית בהם, היסטוריית חיפוש בתוך האפליקציה.
-- העדפות התראות וטוקן התראות דחיפה (לשליחת התראות).
+• פוסטים שצפית בהם, היסטוריית חיפוש בתוך האפליקציה.
+• העדפות התראות וטוקן התראות דחיפה (לשליחת התראות).
+
+נתוני מכשיר:
+• מזהה מכשיר ייחודי (לשיוך טוקן ההתראות שלך למכשיר).
+• דגם המכשיר, הפלטפורמה (iOS / Android) וגרסת מערכת ההפעלה.
 
 אותות מעורבות (לפיד מותאם אישית):
-- ציוני מעורבות אנונימיים המחושבים על בסיס דפוסי האינטראקציה שלך (לייקים, צפיות, תגובות). אלה מעובדים בשרת שלנו לבניית פיד מותאם אישית.
-- ציוני זיקה בינך לבין כותבים אחרים, בהתאם להתנהגות המעורבות שלך.
+• ציוני מעורבות אנונימיים המחושבים על בסיס דפוסי האינטראקציה שלך (לייקים, צפיות, תגובות). אלה מעובדים בשרת שלנו לבניית פיד מותאם אישית.
+• ציוני זיקה בינך לבין כותבים אחרים, בהתאם להתנהגות המעורבות שלך.
+
+נתוני פרסום ואנליטיקה (נאספים אוטומטית על ידי SDK של צדדים שלישיים):
+• מזהה פרסום: ה-IDFA (iOS) או מזהה הפרסום של Google / GAID (Android) שלך, הנאסף על ידי Google AdMob לצורך הצגת מודעות רלוונטיות.
+• אירועי שימוש באפליקציה כמו צפיות במסכים ומשך סשן, הנאספים על ידי Firebase Analytics.
+• נתוני קריסה כולל מצב המכשיר, stack traces, כתובת IP וגרסת האפליקציה, הנאספים על ידי Sentry לניטור שגיאות.
+
+הרשאות מכשיר:
+• מצלמה: נגישה כאשר אתה מצלם תמונות או סרטונים לפוסטים (ההרשאה מתבקשת לפני השימוש).
+• ספריית תמונות: נגישה כאשר אתה בוחר מדיה מהגלריה לפוסטים.
+• מיקרופון: מוצהר לתכונות שמע פוטנציאליות (ההרשאה מתבקשת לפני השימוש).
 
 3. כיצד אנו משתמשים במידע שלך
 אנו משתמשים בנתונים שלך כדי:
-- להפעיל ולספק את שירות Stad.
-- להתאים אישית את פיד התוכן שלך באמצעות אותות מעורבות מבוססי ML.
-- לשלוח התראות דחיפה לאירועי משחקים ואינטראקציות חברתיות (בהסכמתך).
-- לשפר את האפליקציה ולאבחן בעיות טכניות.
+• להפעיל ולספק את שירות Stad.
+• להתאים אישית את פיד התוכן שלך באמצעות אותות מעורבות מבוססי ML.
+• לשלוח התראות דחיפה לאירועי משחקים ואינטראקציות חברתיות (בהסכמתך).
+• להציג מודעות בתוך האפליקציה באמצעות Google AdMob, כולל מודעות מותאמות אישית המבוססות על מזהה הפרסום שלך ומידע על המכשיר.
+• לאתר קריסות אפליקציה ולאבחן בעיות טכניות באמצעות Sentry.
+• לנתח דפוסי שימוש באפליקציה באמצעות Firebase Analytics לשיפור חוויית המשתמש.
+• לשפר את האפליקציה ולשמור על אמינות השירות.
 
 אנו לא מוכרים את הנתונים האישיים שלך לצדדים שלישיים.
 
 4. אחסון נתונים ואבטחה
-הנתונים שלך מאוחסנים בשרתים הממוקמים בפרנקפורט, גרמניה (האיחוד האירופי), המופעלים על ידי Supabase (מסד נתונים PostgreSQL) ו-Google Firebase (Firestore - תוכן חברתי). שני הספקים מיישמים אמצעי אבטחה בתקן תעשייתי.
+הנתונים שלך מאוחסנים בשרתים הממוקמים בפרנקפורט, גרמניה (האיחוד האירופי), המופעלים על ידי Supabase (מסד נתונים PostgreSQL) ו-Google Firebase (Firestore — תוכן חברתי). שני הספקים מיישמים אמצעי אבטחה בתקן תעשייתי.
 
-תוכן חברתי (פוסטים, תגובות, לייקים) מאוחסן ב-Google Firebase Firestore.
-פרופיל ונתוני חשבון מאוחסנים ב-Supabase.
-התראות דחיפה מועברות דרך תשתית ההתראות של Expo.
+• תוכן חברתי (פוסטים, תגובות, לייקים) מאוחסן ב-Google Firebase Firestore.
+• פרופיל ונתוני חשבון מאוחסנים ב-Supabase.
+• טוקני התראות ומזהי מכשיר מאוחסנים במסד הנתונים של Supabase שלנו.
+• התראות דחיפה מועברות דרך תשתית ההתראות של Expo.
+• נתוני קריסה ושגיאות מעובדים על ידי Sentry (שרתים בגרמניה / האיחוד האירופי).
 
 כל הנתונים באיחוד האירופי כפופים להגנות GDPR.
 
 5. שמירת נתונים
 אנו שומרים את הנתונים שלך כל עוד החשבון שלך פעיל. כאשר תמחק את חשבונך, הפרופיל, הפוסטים וכל הנתונים האישיים הקשורים אליך יימחקו לצמיתות ממערכות שלנו.
 
-6. זכויותיך (GDPR)
+6. פרסום
+Stad מציגה מודעות בתוך האפליקציה באמצעות Google AdMob.
+
+לצורך הצגת מודעות רלוונטיות, Google AdMob עשויה לאסוף ולהשתמש ב:
+• מזהה הפרסום של המכשיר שלך (IDFA ב-iOS, GAID ב-Android).
+• מידע על המכשיר (דגם, מערכת הפעלה, גודל מסך).
+• כתובת IP (להסקת מיקום משוער).
+• נתוני שימוש באפליקציה ואינטראקציה.
+
+מזהים אלה משמשים להתאמת מודעות ומדידה. ניתן להגביל מעקב מודעות ברמת המכשיר:
+• iOS: הגדרות ← פרטיות ואבטחה ← מעקב ← השבת "אפשר לאפליקציות לבקש מעקב"
+• Android: הגדרות ← Google ← מודעות ← "מחק מזהה פרסום" או "הסר הסכמה להתאמת מודעות"
+
+למידע נוסף, ראה את מדיניות הפרטיות של Google: policies.google.com/privacy
+
+7. זכויותיך (GDPR ו-CCPA)
+
+GDPR — משתמשים ב-EU / EEA:
 אם אתה ממוקם ב-EU/EEA, יש לך את הזכות:
-- לגשת לנתונים האישיים שאנו מחזיקים עליך.
-- לתקן נתונים שגויים.
-- לבקש מחיקת הנתונים שלך ("הזכות להישכח").
-- להתנגד לעיבוד הנתונים שלך או להגבילו.
-- לניידות נתונים.
+• לגשת לנתונים האישיים שאנו מחזיקים עליך.
+• לתקן נתונים שגויים.
+• לבקש מחיקת הנתונים שלך ("הזכות להישכח").
+• להתנגד לעיבוד הנתונים שלך או להגבילו.
+• לניידות נתונים.
 
-לממש זכויות אלו, פנה/י אלינו: stadsports161@gmail.com
+CCPA — תושבי קליפורניה:
+אם אתה תושב קליפורניה, יש לך את הזכות:
+• לדעת אילו נתונים אישיים אנו אוספים, משתמשים בהם ומשתפים.
+• לבקש מחיקת הנתונים האישיים שנאספו עליך.
+• לבטל את ההסכמה לשיתוף נתונים אישיים (אנו לא מוכרים את הנתונים שלך).
+• לא להיות מופלה לרעה בשל מימוש זכויות הפרטיות שלך.
 
-7. שירותי צד שלישי
-אנו משתמשים בשירותי הצד השלישי הבאים:
-- Supabase (תשתית נתונים) - supabase.com/privacy
-- Google Firebase (נתונים חברתיים בזמן אמת ואימות) - firebase.google.com/support/privacy
-- Expo (התראות דחיפה ותשתית אפליקציה) - expo.dev/privacy
+לממש כל אחת מהזכויות הללו, פנה/י אלינו: stadsports161@gmail.com
 
-8. פרטיות ילדים
+8. שירותי צד שלישי
+אנו משתמשים בשירותי הצד השלישי הבאים. כל אחד עשוי לאסוף נתונים כמתואר במדיניות הפרטיות שלו:
+
+• Supabase (מסד נתונים ואימות) — supabase.com/privacy
+• Google Firebase (אימות, מסד נתונים בזמן אמת, אנליטיקה, הודעות דחיפה) — firebase.google.com/support/privacy
+• Google AdMob (פרסום בתוך האפליקציה) — policies.google.com/privacy
+• Sentry (דיווח קריסות ושחזור סשן) — sentry.io/privacy
+• Expo (התראות דחיפה ותשתית אפליקציה) — expo.dev/privacy
+
+9. פרטיות ילדים
 Stad אינה מיועדת לילדים מתחת לגיל 13. אנו לא אוספים ביודעין מידע אישי מילדים.
 
-9. עוגיות ומעקב
+10. עוגיות ומעקב
 Stad היא אפליקציה סלולרית ואינה משתמשת בעוגיות דפדפן. אנו משתמשים בטוקני הפעלה כדי לשמור על כניסתך לחשבון.
 
-10. שינויים במדיניות זו
+עם זאת, כמו רוב האפליקציות, Stad משתמשת בטכנולוגיות מעקב סלולריות:
+• מזהי פרסום (IDFA / GAID) באמצעות Google AdMob למודעות מותאמות אישית.
+• טכנולוגיית שחזור סשן באמצעות Sentry לצילום אינטראקציות מסך אנונימיות לצורך ניפוי באגים (10% מהסשנים; 100% בעת שגיאות).
+
+ניתן לבטל מעקב מבוסס מודעות דרך הגדרות המכשיר כמתואר בסעיף 6.
+
+11. שינויים במדיניות זו
 אנו עשויים לעדכן מדיניות זו מעת לעת. נודיע לך על שינויים משמעותיים דרך האפליקציה.
 
-11. יצירת קשר
+12. יצירת קשר
 לפניות הקשורות לפרטיות: stadsports161@gmail.com`
       };
 
@@ -198,7 +302,7 @@ Stad היא אפליקציה סלולרית ואינה משתמשת בעוגיו
       document.getElementById('content').textContent = PRIVACY[lang];
       document.getElementById('content').classList.toggle('rtl', isHe);
       document.getElementById('title').textContent = isHe ? 'מדיניות פרטיות' : 'Privacy Policy';
-      document.getElementById('updated').textContent = isHe ? 'עדכון אחרון: אפריל 2025' : 'Last Updated: April 2025';
+      document.getElementById('updated').textContent = isHe ? 'עדכון אחרון: אפריל 2026' : 'Last Updated: April 2026';
       document.getElementById('enBtn').classList.toggle('active', !isHe);
       document.getElementById('heBtn').classList.toggle('active', isHe);
       document.getElementById('termsLink').href = `terms.html?lang=${lang}`;
@@ -212,4 +316,3 @@ Stad היא אפליקציה סלולרית ואינה משתמשת בעוגיו
     </script>
   </body>
 </html>
-
