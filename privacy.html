@@ -37,7 +37,7 @@
     <script>
       const PRIVACY = {
         en: `PRIVACY POLICY - STAD
-Last Updated: April 2026
+Last Updated: June 2026
 
 Your privacy is important to us. This Privacy Policy explains how Stad ("we", "us", "our") collects, uses, and protects your personal data.
 
@@ -77,12 +77,14 @@ Device Permissions:
 • Camera: accessed when you take photos or videos for posts (permission requested before use).
 • Photo Library: accessed when you select media from your gallery for posts.
 • Microphone: declared for potential audio features (permission requested before use).
+• Calendar: accessed only to add match fixtures you explicitly request to your device calendar. We do not read, store, or access any of your existing calendar events or data.
 
 3. HOW WE USE YOUR DATA
 We use your data to:
 • Operate and provide the Stad service.
 • Personalize your content feed using ML-based engagement signals.
 • Send push notifications for match events and social interactions (with your consent).
+• Allow you to add match fixtures to your device calendar when you tap "Add to Calendar" — we never read or store any of your existing calendar events.
 • Display in-app advertisements via Google AdMob, including personalized ads based on your advertising ID and device information.
 • Detect app crashes and diagnose technical issues via Sentry crash reporting and session replay.
 • Analyze app usage patterns via Firebase Analytics to improve the app experience.
@@ -165,7 +167,7 @@ We may update this policy periodically. We will notify you of significant change
 12. CONTACT
 For privacy-related inquiries: stadsports161@gmail.com`,
         he: `מדיניות פרטיות - STAD
-עדכון אחרון: אפריל 2026
+עדכון אחרון: יוני 2026
 
 פרטיותך חשובה לנו. מדיניות פרטיות זו מסבירה כיצד Stad ("אנחנו") אוספת, משתמשת ומגנה על נתונים אישיים שלך.
 
@@ -205,12 +207,14 @@ Stad היא אפליקציית ספורט חברתית. לשאלות בנוגע 
 • מצלמה: נגישה כאשר אתה מצלם תמונות או סרטונים לפוסטים (ההרשאה מתבקשת לפני השימוש).
 • ספריית תמונות: נגישה כאשר אתה בוחר מדיה מהגלריה לפוסטים.
 • מיקרופון: מוצהר לתכונות שמע פוטנציאליות (ההרשאה מתבקשת לפני השימוש).
+• יומן: נגיש אך ורק כדי להוסיף משחקים שביקשת להוסיף ליומן המכשיר שלך. אנו לא קוראים, מאחסנים או ניגשים לאף אחד מהאירועים או הנתונים הקיימים ביומן שלך.
 
 3. כיצד אנו משתמשים במידע שלך
 אנו משתמשים בנתונים שלך כדי:
 • להפעיל ולספק את שירות Stad.
 • להתאים אישית את פיד התוכן שלך באמצעות אותות מעורבות מבוססי ML.
 • לשלוח התראות דחיפה לאירועי משחקים ואינטראקציות חברתיות (בהסכמתך).
+• לאפשר לך להוסיף משחקים ליומן המכשיר שלך כשאתה לוחץ על "הוסף ליומן" — אנו לא קוראים או מאחסנים אף אחד מהאירועים הקיימים ביומן שלך.
 • להציג מודעות בתוך האפליקציה באמצעות Google AdMob, כולל מודעות מותאמות אישית המבוססות על מזהה הפרסום שלך ומידע על המכשיר.
 • לאתר קריסות אפליקציה ולאבחן בעיות טכניות באמצעות Sentry.
 • לנתח דפוסי שימוש באפליקציה באמצעות Firebase Analytics לשיפור חוויית המשתמש.
@@ -302,7 +306,7 @@ Stad היא אפליקציה סלולרית ואינה משתמשת בעוגיו
       document.getElementById('content').textContent = PRIVACY[lang];
       document.getElementById('content').classList.toggle('rtl', isHe);
       document.getElementById('title').textContent = isHe ? 'מדיניות פרטיות' : 'Privacy Policy';
-      document.getElementById('updated').textContent = isHe ? 'עדכון אחרון: אפריל 2026' : 'Last Updated: April 2026';
+      document.getElementById('updated').textContent = isHe ? 'עדכון אחרון: יוני 2026' : 'Last Updated: June 2026';
       document.getElementById('enBtn').classList.toggle('active', !isHe);
       document.getElementById('heBtn').classList.toggle('active', isHe);
       document.getElementById('termsLink').href = `terms.html?lang=${lang}`;
