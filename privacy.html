@@ -72,6 +72,7 @@ Advertising & Analytics Data (collected automatically by third-party SDKs):
 • Advertising Identifier: your device's IDFA (iOS) or Google Advertising ID / GAID (Android), collected by Google AdMob to serve relevant ads.
 • App usage events such as screen views and session duration, collected by Firebase Analytics.
 • Crash diagnostics including device state, stack traces, IP address, and app version, collected by Sentry for error monitoring.
+• App events (installs, sessions, registrations) and advertising identifier (IDFA on iOS, GAID on Android), collected by Meta (Facebook) SDK to measure app promotion campaign performance. On iOS, your IDFA is only collected after you grant App Tracking Transparency (ATT) permission.
 
 Device Permissions:
 • Camera: accessed when you take photos or videos for posts (permission requested before use).
@@ -88,6 +89,7 @@ We use your data to:
 • Display in-app advertisements via Google AdMob, including personalized ads based on your advertising ID and device information.
 • Detect app crashes and diagnose technical issues via Sentry crash reporting and session replay.
 • Analyze app usage patterns via Firebase Analytics to improve the app experience.
+• Measure and optimize app promotion campaigns via Meta (Facebook) SDK.
 • Improve the app and maintain service reliability.
 
 We do NOT sell your personal data to third parties.
@@ -121,6 +123,15 @@ These identifiers are used for ad personalization and measurement. You can limit
 
 For more information, see Google's Privacy Policy: policies.google.com/privacy
 
+App Promotion Analytics — Meta (Facebook) SDK:
+We use Meta's SDK to measure the effectiveness of app promotion campaigns on the Meta platform (Facebook, Instagram). The Meta SDK may collect:
+• App events such as installs, app opens, and registrations.
+• Your device's advertising identifier (IDFA on iOS, GAID on Android).
+
+On iOS, your advertising identifier is only shared with Meta after you explicitly grant App Tracking Transparency (ATT) permission when prompted at app launch. On Android, no additional permission is required.
+
+For more information, see Meta's Privacy Policy: facebook.com/privacy/policy/
+
 7. YOUR RIGHTS (GDPR & CCPA)
 
 GDPR — EU / EEA Users:
@@ -148,6 +159,7 @@ We use the following third-party services. Each may collect data as described in
 • Google AdMob (in-app advertising) — policies.google.com/privacy
 • Sentry (crash reporting & session replay) — sentry.io/privacy
 • Expo (push notifications & app infrastructure) — expo.dev/privacy
+• Meta (Facebook) SDK (app promotion analytics) — facebook.com/privacy/policy/
 • Loops (email marketing, only if you opt in) — loops.so/privacy
 
 9. EMAIL MARKETING
@@ -169,6 +181,7 @@ Stad is a mobile application and does not use browser cookies. We use session to
 
 However, like most apps, Stad uses mobile tracking technologies:
 • Advertising Identifiers (IDFA / GAID) via Google AdMob for personalized ads.
+• App events and advertising identifier via Meta (Facebook) SDK for app promotion measurement. On iOS, only collected after ATT permission is granted.
 • Session replay technology via Sentry to capture anonymized screen interactions for debugging (10% of sessions; 100% when errors occur).
 
 You can opt out of ad-based tracking via your device settings as described in Section 6.
@@ -214,6 +227,7 @@ Stad היא אפליקציית ספורט חברתית. לשאלות בנוגע 
 • מזהה פרסום: ה-IDFA (iOS) או מזהה הפרסום של Google / GAID (Android) שלך, הנאסף על ידי Google AdMob לצורך הצגת מודעות רלוונטיות.
 • אירועי שימוש באפליקציה כמו צפיות במסכים ומשך סשן, הנאספים על ידי Firebase Analytics.
 • נתוני קריסה כולל מצב המכשיר, stack traces, כתובת IP וגרסת האפליקציה, הנאספים על ידי Sentry לניטור שגיאות.
+• אירועי אפליקציה (התקנות, סשנים, הרשמות) ומזהה פרסום (IDFA ב-iOS, GAID ב-Android), הנאספים על ידי Meta SDK (Facebook) למדידת ביצועי קמפיינים לקידום האפליקציה. ב-iOS, ה-IDFA שלך נאסף רק לאחר שתעניק הרשאת App Tracking Transparency (ATT).
 
 הרשאות מכשיר:
 • מצלמה: נגישה כאשר אתה מצלם תמונות או סרטונים לפוסטים (ההרשאה מתבקשת לפני השימוש).
@@ -230,6 +244,7 @@ Stad היא אפליקציית ספורט חברתית. לשאלות בנוגע 
 • להציג מודעות בתוך האפליקציה באמצעות Google AdMob, כולל מודעות מותאמות אישית המבוססות על מזהה הפרסום שלך ומידע על המכשיר.
 • לאתר קריסות אפליקציה ולאבחן בעיות טכניות באמצעות Sentry.
 • לנתח דפוסי שימוש באפליקציה באמצעות Firebase Analytics לשיפור חוויית המשתמש.
+• למדוד ולמטב קמפיינים לקידום האפליקציה באמצעות Meta SDK (Facebook).
 • לשפר את האפליקציה ולשמור על אמינות השירות.
 
 אנו לא מוכרים את הנתונים האישיים שלך לצדדים שלישיים.
@@ -263,6 +278,15 @@ Stad מציגה מודעות בתוך האפליקציה באמצעות Google A
 
 למידע נוסף, ראה את מדיניות הפרטיות של Google: policies.google.com/privacy
 
+קידום אפליקציה — Meta SDK (Facebook):
+אנו משתמשים ב-SDK של Meta למדידת יעילות קמפיינים לקידום האפליקציה בפלטפורמת Meta (Facebook, Instagram). ה-SDK של Meta עשוי לאסוף:
+• אירועי אפליקציה כגון התקנות, פתיחות אפליקציה והרשמות.
+• מזהה הפרסום של המכשיר שלך (IDFA ב-iOS, GAID ב-Android).
+
+ב-iOS, מזהה הפרסום שלך משותף עם Meta רק לאחר שתעניק הרשאת App Tracking Transparency (ATT) במפורש בעת הפעלת האפליקציה. ב-Android, אין צורך בהרשאה נוספת.
+
+למידע נוסף, ראה את מדיניות הפרטיות של Meta: facebook.com/privacy/policy/
+
 7. זכויותיך (GDPR ו-CCPA)
 
 GDPR — משתמשים ב-EU / EEA:
@@ -290,6 +314,7 @@ CCPA — תושבי קליפורניה:
 • Google AdMob (פרסום בתוך האפליקציה) — policies.google.com/privacy
 • Sentry (דיווח קריסות ושחזור סשן) — sentry.io/privacy
 • Expo (התראות דחיפה ותשתית אפליקציה) — expo.dev/privacy
+• Meta SDK (Facebook) (אנליטיקה לקידום אפליקציה) — facebook.com/privacy/policy/
 • Loops (שיווק במייל, רק אם הסכמת לכך) — loops.so/privacy
 
 9. שיווק במייל
@@ -311,6 +336,7 @@ Stad היא אפליקציה סלולרית ואינה משתמשת בעוגיו
 
 עם זאת, כמו רוב האפליקציות, Stad משתמשת בטכנולוגיות מעקב סלולריות:
 • מזהי פרסום (IDFA / GAID) באמצעות Google AdMob למודעות מותאמות אישית.
+• אירועי אפליקציה ומזהה פרסום באמצעות Meta SDK (Facebook) למדידת קמפיינים לקידום האפליקציה. ב-iOS, נאסף רק לאחר מתן הרשאת ATT.
 • טכנולוגיית שחזור סשן באמצעות Sentry לצילום אינטראקציות מסך אנונימיות לצורך ניפוי באגים (10% מהסשנים; 100% בעת שגיאות).
 
 ניתן לבטל מעקב מבוסס מודעות דרך הגדרות המכשיר כמתואר בסעיף 6.
